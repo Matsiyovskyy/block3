@@ -1,0 +1,57 @@
+:root {
+    color: white;
+}
+
+a {
+    color: white;
+    font-family: verdana;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+    
+}
+
+.info-block {
+    display: block;
+    margin: 70px;
+    padding: 15px;
+}
+
+.hot-sale {
+    display: block;
+    margin: 70px;
+    padding: 15px;
+}
+
+.wraper-col p {
+    font-family: Verdana;
+}
+
+.wraper-col {
+    background-color: #261e1c;
+}
+
+.awards {
+    display: block;
+    text-align: center;
+}
+
+.awards-list {
+    display: block;
+    margin: 70px;
+    padding: 15px;
+}
+
+.video-block {
+    display: block;
+    margin: 70px;
+    padding: 15px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+
