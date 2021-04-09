@@ -54,4 +54,11 @@ a:hover {
     max-height: 500px;
 }
 
+button:hover {
+    color: blueviolet;
+    background-color: orchid;
+}
 
+button {
+    background-color: sandybrown;
+}
