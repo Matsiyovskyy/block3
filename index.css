@@ -21,6 +21,10 @@ a:hover {
     padding: 15px;
 }
 
+.info-block h3 {
+    font-size: 84px;
+}
+
 .hot-sale {
     display: block;
     margin: 70px;
