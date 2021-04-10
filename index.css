@@ -15,6 +15,7 @@ main {
 
 .wrapper-col {
     background-image: url(../img/wineback.jpg);
+    max-width: 980 px;
     
 }
 
