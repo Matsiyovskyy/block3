@@ -8,16 +8,16 @@
     padding: 0;
 }
 
-main {
+body {
     max-width: 980px;
     margin: auto;
 }
 
-.wrapper-col {
-    background-image: url(../img/wineback.jpg);
-    max-width: 980 px;
-    
+main {
+    background-image: url(../img/wineback.jpg); 
 }
+
+
 
 .wrapper-col p, h2, h3, h4 {
     font-family: Verdana;
@@ -25,7 +25,7 @@ main {
 }
 
 a {
-    color: white;
+    color: var(--main-color);
     font-family: verdana;
     font-size: 15px;
     text-decoration: none;
@@ -36,29 +36,35 @@ a:hover {
     text-decoration: none;
     
 }
+ 
 
 
-
-.info-block {
-    display: block;
-    margin: 70px;
-    padding: 15px;
+.info-block {   
+    border: 3px solid white;
+    padding: 10px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
-.info-block h3 {
-    font-size: 84px;
+
+
+@media (min-width: 440px) {
+    .info-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
 }
 
-div .video-block {
-    display: block;
-    width: 200px;
-    height: 200px;
-}
 
+
+.card-list h3, p {
+    
+}
 
 
 .card-list .card {
-    border: 1px solid var(--main-color);
+    
     padding: 10px;
     box-shadow: 0 2px 4px 0 var(--main-color);
     transition: 0.3s;
@@ -109,13 +115,6 @@ div .video-block {
     padding: 15px;
 }
 
-.video-block {
-    display: block;
-    margin: 70px;
-    padding: 15px;
-    max-width: 500px;
-    max-height: 500px;
-}
 
 button:hover {
     color: blueviolet;
