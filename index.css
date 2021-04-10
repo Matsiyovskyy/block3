@@ -1,5 +1,26 @@
 :root {
-    color: white;
+    --main-color: white;
+    --accent-color : #261e1c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 980px;
+    margin: auto;
+}
+
+.wrapper-col {
+    background-image: url(../img/wineback.jpg);
+    
+}
+
+.wrapper-col p, h2, h3, h4 {
+    font-family: Verdana;
+    color: var(--main-color);
 }
 
 a {
@@ -15,6 +36,8 @@ a:hover {
     
 }
 
+
+
 .info-block {
     display: block;
     margin: 70px;
@@ -25,26 +48,37 @@ a:hover {
     font-size: 84px;
 }
 
-.hot-sale {
+
+
+.card {
+    display: block;
+    padding: 5px;
+    border: 2px solid var(--main-color);
+}
+
+.card img {
+    display: block;
+    padding: 5px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.awards {
+    background-color: var(--accent-color);
+}
+
+.toper-awards {
+    text-align: center;
+}
+
+.award-list {
     display: block;
     margin: 70px;
     padding: 15px;
 }
 
-.wraper-col p {
-    font-family: Verdana;
-}
-
-.wraper-col {
-    background-color: #261e1c;
-}
-
-.awards {
-    display: block;
-    text-align: center;
-}
-
-.awards-list {
+.ita-info, .geo-info,
+.tcp-info {
     display: block;
     margin: 70px;
     padding: 15px;
@@ -66,3 +100,7 @@ button:hover {
 button {
     background-color: sandybrown;
 }
+
+
+
+
