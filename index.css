@@ -48,20 +48,46 @@ a:hover {
     font-size: 84px;
 }
 
-
-
-.card {
+div .video-block {
     display: block;
-    padding: 5px;
-    border: 2px solid var(--main-color);
+    width: 200px;
+    height: 200px;
 }
 
-.card img {
-    display: block;
-    padding: 5px;
+.card-list {
+    
+}
+
+.card-list .card {
+    border: 1px solid var(--main-color);
+    padding: 10px;
+    box-shadow: 0 2px 4px 0 var(--main-color);
+    transition: 0.3s;
     max-width: 300px;
     max-height: 300px;
 }
+
+
+
+.card-list .card:hover {
+    box-shadow: 0 4px 8px 0 var(--main-color);
+}
+
+.card-list .card img {
+    display: block;
+    width: 100%;
+}
+
+
+@media (min-width: 440px) {
+    .card-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+
 
 .awards {
     background-color: var(--accent-color);
