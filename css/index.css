@@ -42,6 +42,8 @@ a:hover {
     
 }
  
+/* INFO-BLOCK START */
+
 .info-block {   
     display: block;
     width: 100%;
@@ -84,9 +86,6 @@ a:hover {
     box-shadow: 0 4px 8px 0 var(--orange-color);
 }
 
-
-
-
 @media (min-width: 440px) {
     .info-block {
         display: grid;
@@ -94,9 +93,11 @@ a:hover {
         grid-gap: 5px;
     }
 }
+/* INFO-BLOCK END */
+/* CARD START */
 
 .card-list {   
-    padding: 50px 30px 50px 30px;
+    padding: 50px 30px 0px 30px;
 }
 
 .card-list .card-geo {
@@ -137,8 +138,6 @@ a:hover {
     box-shadow: 0 4px 8px 0 var(--orange-color);
 }
 
-
-
 .card-list h3 {
     font-family: 'Prata';
     font-size: 20px;
@@ -165,9 +164,6 @@ a:hover {
     
 }
 
-
-
-
 @media (min-width: 440px) {
     .card-list {
         display: grid;
@@ -184,13 +180,32 @@ a:hover {
     }
 }
 
+/* CARD END */
+/* COUNTDOWN START */
 
-.c-block .countdown {
-    display: block;
-    background-color: var(--orange-color);
-    max-width: 100%;
-    
-    
+.c-block {
+    padding: 0px 30px 50px 30px;
+}
+
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/contdown.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px 0 var(--orange-color);
+    transition: 0.3s;
+    min-width: 840px;
+    min-height: 180px;
+}
+
+.countdown:hover {
+    box-shadow: 0 4px 8px 0 var(--orange-color);
 }
 
 .countdown p {
@@ -198,11 +213,13 @@ a:hover {
     text-align: center;
 }
 
-.countdown h3 {
-    padding: 20px;
+.countdown h3, p {
     text-align: center;
+    font-family: 'Prata';
+    color: var(--main-color);
 }
 
+/* COUNTDOWN END */
 
 .awards {
     background-color: var(--accent-color);
