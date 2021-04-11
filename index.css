@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
 
-
-
 :root {
     --main-color: white;
     --accent-color : #261e1c;
@@ -42,13 +40,12 @@ a:hover {
     
 }
  
-
-
 .info-block {   
     display: block;
     width: 100%;
     padding: 0;
     background-image: url(../img/backgrounw.jpg); 
+    background-size: cover;
     
 }
 
@@ -82,7 +79,7 @@ a:hover {
 }
 
 .video:hover {
-    box-shadow: 0 4px 8px 0 var(--accent-color);
+    box-shadow: 0 4px 8px 0 var(--orange-color);
 }
 
 
@@ -96,21 +93,14 @@ a:hover {
     }
 }
 
-
-
-
-
-
 .card-list .card {
-    margin: 60px 60px 60px 60px;
+    margin: 100px 130px 100px 130px;
     padding: 0px;
     box-shadow: 0 2px 4px 0 var(--orange-color);
     transition: 0.3s;
-    max-width: 420px;
-    max-height: 420px;
+    max-width: 220px;
+    max-height: 220px;
 }
-
-
 
 .card-list .card:hover {
     box-shadow: 0 4px 8px 0 var(--orange-color);
@@ -123,23 +113,30 @@ a:hover {
 
 .card-list h3 {
     font-family: 'Yeseva One';
-    font-size: 20px;
+    font-size: 10px;
     color: var(--main-color);
-    padding: 10px;
+    padding: 1px;
 }
 
 .card-list p {
     font-family: 'Poiret One';
+    font-size: 10px;
     color: var(--main-color);
-    padding: 10px;
+    padding: 1px;
 }
 
-.card-but {
-    padding: 10px;
-}
+
 
 
 @media (min-width: 440px) {
+    .card-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
     .card-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -147,6 +144,24 @@ a:hover {
     }
 }
 
+
+.c-block .countdown {
+    display: block;
+    background-color: var(--orange-color);
+    max-width: 100%;
+    
+    
+}
+
+.countdown p {
+    padding: 20px;
+    text-align: center;
+}
+
+.countdown h3 {
+    padding: 20px;
+    text-align: center;
+}
 
 
 .awards {
@@ -170,35 +185,29 @@ a:hover {
     padding: 15px;
 }
 
-.countdown {
-    background-color: var(--orange-color);
-    margin: auto;
-}
 
-.countdown p {
-    padding: 20px;
-    text-align: center;
-}
 
-.countdown h3 {
-    padding: 20px;
-    text-align: center;
-}
+
+
+
+
+
 
 
 
 /* Controls */
 
 .button {
-    padding: 5px;
+    padding: 0px;
     border: 0.1em solid #FFFFFF;
     margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
+    border-radius: 0.1em;
     color: #FFFFFF;
     text-decoration: none;
     text-align: center;
     transition: color 0.7s;
     background-color: transparent;
+    font-size: 10px;
 }
 
 .button:hover {
