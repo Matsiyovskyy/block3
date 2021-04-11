@@ -72,6 +72,7 @@ a:hover {
 .info-block p {
     font-family: 'Poiret One';
     color: var(--main-color);
+    text-align: start;
 }
 
 .video {
@@ -225,32 +226,84 @@ a:hover {
     background-color: var(--accent-color);
 }
 
+/* AWARDS-TOPPER START */
+
 .toper-awards {
+    display: block;
     text-align: center;
 }
 
+.toper-awards h2 {
+    color: var(--orange-color);
+    font-family: "Seaweed Script";
+    font-size: 25px;
+}
+
+.toper-awards h3 {
+    color: var(--main-color);
+    font-family: 'Prata';
+    font-size: 40px;
+}
+
+.toper-awards p {
+    color: var(--main-color);
+    font-family: 'Poiret One';
+    font-size: 15px;
+}
+
+/* AWARDS-TOPPER END */
+
+/*AWARD-LIST START*/
+
 .award-list {
-    display: block;
-    margin: 70px;
-    padding: 15px;
+    padding: 40px 0px 10px 0px;
 }
 
-.ita-info, .geo-info,
-.tcp-info {
-    display: block;
-    margin: 70px;
-    padding: 15px;
+.award-list p {
+    display: flex;
+    align-items: flex-start;
+    text-align: start;
+    max-width: 300px;
+    max-height: 300px;
+    font-family: 'Poiret One';
+    font-size: 10px;
+    color: var(--main-color);
 }
 
+.award-list h4 {
+    font-family: 'Prata';
+    color: var(--main-color);
+    font-size: 13px;
+}
 
+.award-list h3 {
+    font-family: 'Poiret One';
+    font-size: 10px;
+    color: var(--main-color);
+}
 
+.wine-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
 
+}
 
+.wine-info img {
+    width: 120px;
+    height: 60px;
+    box-shadow: 0 2px 4px 0 var(--orange-color);
+    transition: 0.3s;
+}
 
+.wine-info img:hover {
+    box-shadow: 0 4px 8px 0 var(--orange-color);
+}
 
-
-
-
+/*AWARD-LIST END*/
 
 /* Controls */
 
