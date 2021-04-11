@@ -45,7 +45,7 @@ a:hover {
     display: block;
     width: 100%;
     padding: 0;
-    background-image: url(../img/backgrounw.jpg); 
+    background-image: url(/img/backgrounw.jpg); 
     background-size: cover;
     
 }
@@ -99,8 +99,8 @@ a:hover {
     padding: 0px;
     box-shadow: 0 2px 4px 0 var(--orange-color);
     transition: 0.3s;
-    max-width: 220px;
-    max-height: 220px;
+    max-width: 320px;
+    max-height: 320px;
 }
 
 .card-list .card:hover {
