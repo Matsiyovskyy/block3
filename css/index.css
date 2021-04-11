@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+
 :root {
     --main-color: white;
     --accent-color : #261e1c;
@@ -45,7 +46,7 @@ a:hover {
     display: block;
     width: 100%;
     padding: 0;
-    background-image: url(/img/backgrounw.jpg); 
+    background-image: url(../img/backgrounw.jpg); 
     background-size: cover;
     
 }
@@ -94,16 +95,44 @@ a:hover {
     }
 }
 
-.card-list .card {
-    margin: 100px 130px 100px 130px;
-    padding: 0px;
+.card-list .card-geo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction:column;
+    background-image: url(/img/geohotsale.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 70px;
     box-shadow: 0 2px 4px 0 var(--orange-color);
     transition: 0.3s;
+    min-width: 320px;
+    min-height: 120px;
     max-width: 320px;
+    max-height: 220px;
+}
+
+.card-list .card-ita {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction:column;
+    background-image: url(/img/itahotsale.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 70px;
+    box-shadow: 0 2px 4px 0 var(--orange-color);
+    transition: 0.3s;
+    min-width: 320px;
+    min-height: 120px;
+    max-width: 520px;
     max-height: 320px;
 }
 
-.card-list .card:hover {
+.card-list .card-geo:hover,
+.card-list .card-ita:hover {
     box-shadow: 0 4px 8px 0 var(--orange-color);
 }
 
@@ -117,6 +146,7 @@ a:hover {
     font-size: 10px;
     color: var(--main-color);
     padding: 1px;
+    text-align: center;
 }
 
 .card-list p {
@@ -124,6 +154,13 @@ a:hover {
     font-size: 10px;
     color: var(--main-color);
     padding: 1px;
+    text-align: center;
+}
+
+.card-but .button {
+    display: flex;
+    justify-content: space-around;
+    
 }
 
 
