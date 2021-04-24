@@ -112,7 +112,7 @@ a:hover {
 /* CARD START */
 
 .card-list {   
-    padding: 50px 30px 0px 30px;
+    padding: 50px 30px 50px 30px;
 }
 
 .card-list .card-geo {
@@ -189,66 +189,78 @@ a:hover {
 
 @media (min-width: 660px) {
     .card-list {
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (min-width: 980px) {
-    .card-list {        
+    .card-list {  
+        display: grid;      
         grid-template-columns: 1fr 1fr;       
     }
 }
 
 /* CARD END */
 /* COUNTDOWN START */
-
-.c-block {
-    padding: 0px 30px 50px 30px;
+.hotsale {
+    background-color: var(--accent-color);
+    padding: 50px 30px 50px 30px;
 }
 
-
-.countdown {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+.cblock {
     background-image: url(../img/contdown.jpg);
     background-position: center;
     background-size: cover;
-    padding: 20px;
-    margin: 20px;
     box-shadow: 0 2px 4px 0 var(--orange-color);
     transition: 0.3s;
-    min-width: 840px;
-    min-height: 180px;
+    max-width: 760px;
+    height: 180px;
+    padding: 30px;
+    margin: auto;
 }
 
-.countdown:hover {
+.cblock:hover {
     box-shadow: 0 4px 8px 0 var(--orange-color);
 }
 
-.countdown p {
-    padding: 20px;
-    text-align: center;
+.countdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.countdown h3, p {
-    text-align: center;
-    font-family: 'Prata';
+.time {
+    border: solid 2px var(--main-color);
+    padding: 40px;
+    font-family: 'Poiret One';
     color: var(--main-color);
 }
 
+.counttext {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Prata';
+    color: var(--orange-color);
+    padding: 0px, 0px, 10px, 50px;
+}
+
+
 /* COUNTDOWN END */
+/* AWARDS-TOPPER START */
 
 .awards {
     background-color: var(--accent-color);
 }
 
-/* AWARDS-TOPPER START */
-
 .toper-awards {
     display: block;
     text-align: center;
+    margin: auto;
+    padding: 50px;
 }
 
 .toper-awards h2 {
@@ -274,7 +286,7 @@ a:hover {
 /*AWARD-LIST START*/
 
 .award-list {
-    padding: 40px 0px 10px 0px;
+    padding: 40px 0px 0px 0px;
 }
 
 .award-list p {
@@ -321,6 +333,24 @@ a:hover {
     box-shadow: 0 4px 8px 0 var(--orange-color);
 }
 
+@media (min-width: 440px) {
+    .award-list {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media (min-width: 660px) {
+    .award-list {
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .award-list {
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
 /*AWARD-LIST END*/
 
 /* Controls */
@@ -351,4 +381,3 @@ a:hover {
     background-color: black;
     color: white;
 }
-
